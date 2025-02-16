@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication Apps</title>
+    <style>
+      @import url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);
+      
+      @import url(https://fonts.googleapis.com/css2?family=Oswald&display=swap);
+      
+      @import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200);
+    </style>
+    <link rel="stylesheet" href="./src/webCrumbs.css">
+  </head>
+  <body>
+    <div id="webcrumbs">
+        <div class="bg-gray-800 shadow-2xl p-8">
+          <div class="nonscroll-content">
+            <span class="material-symbols-outlined text-6xl mb-4 text-blue-400">lock</span>
+            <h1 class="text-2xl font-bold mb-6 text-white">GAP - Gar's Authentication Apps</h1>
+            <h2 class="text-xl font-bold mb-4 text-white" id="countdown">Will be refresh in 0 second</h2>
+          </div>
+          <div class="flex flex-col items-center">
+                <div class="scroll-content" id="otpCode"></div>
+              </div>
+          </div>
+        </div>
+    </div>
+    <script>
+      // Get the text field
+      function copyOTP(id) {
+          // Get the text field
+          var copyText = document.getElementById(id);
+        
+          // Select the text field
+          copyText.select();
+          copyText.setSelectionRange(0, 99999); // For mobile devices
+        
+          // Copy the text inside the text field
+          navigator.clipboard.writeText(copyText.value);
+      }
+    </script>
+    <script src="./src/main.js" type="module"></script>
+
+</body>
+</html>

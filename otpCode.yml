@@ -1,0 +1,6 @@
+
+OTP:
+  WEBSITE_NAME_01:
+    secret: "OTP_KEY"
+  WEBSITE_NAME_02:
+    secret: "OTP_KEY"
