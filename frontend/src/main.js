@@ -24,7 +24,7 @@ setInterval(function() {
         }
         document.querySelector("#countdown").innerHTML = `Will be refresh in ${refreshCount} second`
     }
-}, 1000);
+}, 100);
 
 function getOTP() {
     // Call App.OTP()
