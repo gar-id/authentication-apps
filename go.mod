@@ -1,4 +1,4 @@
-module wails-simple
+module authentication-apps
 
 go 1.21
 
